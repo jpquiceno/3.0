@@ -1,0 +1,47 @@
+// datestamp area
+// 
+#datestamp{
+	border-top:1px solid #eee;
+	// padding-top:10px;
+	margin:0;
+	overflow: hidden;
+
+	ul{
+		list-style-type: none;
+		margin: 20px;
+
+		&.content-source {
+			display:inline;
+			
+			ul {
+				display: inline;
+				margin:none;
+				li {
+					float:none;
+					display:inline;
+				}
+			}
+		}
+		
+		li{
+			color:@light-black;
+			font-size: @normalFontSize;
+			
+			> ul{
+				li{display: inline;}
+				
+				display: inline;
+				margin: 0 0 0 5px;
+				// position: relative;
+				// top: 4px;
+			}
+		}
+	}
+}
+
+html.nav,
+html.content{
+	#datestamp{
+		clear:left;
+	}
+}

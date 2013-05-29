@@ -1,0 +1,139 @@
+// a2z.less
+
+.local-a2z{
+	ul{
+		margin-top:10px;
+		margin-left:10px;
+		li{
+			border:0;
+			display: inline-block;
+			text-align: center;
+			margin-right:5px;
+		}
+	}
+}
+
+// a2z bar
+.a2z-bar{
+	// table-layout: fixed;
+	
+	ul{
+		margin:0;
+		text-align: left;
+	}
+	
+	li{
+		border:0;
+		display: inline-block;
+		text-align: center;
+		line-height: 40px;
+		a{
+			color: @white;
+			display: block;
+			width: 41px;
+			font-weight: bold;
+		}
+	}
+	// no border on the first cell
+	:first-child{
+		border:0;
+	}
+
+	// display: none;
+}
+
+// show the bar by default if JS is turned off
+.no-js .a2z{
+	display: inherit;
+}
+
+// button
+.a2z-button, .a2z-redirect-button{
+	background: @cdcblue;
+	// float:right;
+	.border-radius(5px 5px 0 0);
+	padding:5px;
+	cursor:pointer;
+	color:#fff;
+	text-align: center;
+	text-transform: uppercase;
+	clear:both;
+	
+	// specifically the right arrow on the redirect button
+	
+}
+
+// default button states
+.a2z-button{
+	.box-sizing(border-box);
+	display:inherit;
+	// width: 185px;
+	padding:5px 17px;
+	border-bottom:1px solid @white;
+	margin-top: 18px;
+	margin-right: 10px;
+	font-size: 1.4rem;
+	line-height: 25px;
+
+	i {
+		margin-left: 5px;
+		font-size: 18px;
+	}
+} 
+
+.a2z-redirect-button{
+	display:none;
+}
+
+.a2z-bar{
+	background: @cdcblue;
+	.border-radius(5px 5px 0 0);
+	margin-right:0;
+	border-bottom: 1px solid @light-gray;
+}
+
+// reverse if local a2z present
+html.atz{
+	.a2z-button{
+		display:none;
+	}
+	.a2z-redirect-button{
+		display: inherit;
+		
+		a{
+			color:#fff;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+.a2z-button.dropdown{
+	.caret{
+		border-top: 4px solid @white;
+	}
+}
+
+.a2z-button.dropup{
+	.caret{
+		margin-top: 8px;
+		margin-left: 2px;
+		border-bottom: 4px solid @white;	
+	}
+}
+
+.a2z-link-button{
+	background: @cdcblue;
+	float:right;
+	padding:5px;
+	text-transform: uppercase;
+	clear:both;
+	text-align: right;
+	margin-bottom:5px;
+	width:95px;
+	
+	a{
+		color:#fff;
+	}
+}

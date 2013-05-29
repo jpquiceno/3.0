@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js content nav theme-purple lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js content nav theme-purple lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js content nav theme-purple lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js content nav theme-purple"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Content Page Carousels (Template D)</title>
+		
+		<meta name="description" content="CDC - Home Page without Navigation example description goes here">
+		<meta name="keywords" content="CDC - Home Page without Navigation example keywords goes here">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/TemplatePackage/3.0/apple-touch-icon.png">
+		
+		<meta name="robots" content="index,follow">
+		<!-- cdc -->
+		<meta property="cdc:template_version" content="3.0">
+		<!-- fb -->
+		<meta property="og:title" content="">
+		<meta property="og:image" content="">
+		<meta property="og:site_name" content="">
+		<meta property="og:description" content="">
+		<!-- twitter // will throw HTML validation errors 
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:image" content="">
+		<meta name="twitter:site" content="">
+		<meta name="twitter:creator" content="">
+		<meta name="twitter:description" content="">
+		<meta name="twitter:url" content="">
+		<meta name="twitter:title" content="">
+		 -->
+		
+		<!--#include virtual="/TemplatePackage/3.0/includes/head.html" -->
+
+		<style>
+			.cdc-caption{
+				display: inline-block;
+				padding: 1px 0;
+				position: relative;
+				border: 1px solid #c0c0c0;
+				box-shadow: 0 0 8px rgba(0,0,0,0.13);
+			}
+			.cdc-caption img {
+				display: block;
+				border: 0;
+				border-radius: 2px 2px 0 0;
+				margin: 9px auto;
+				max-width: 100%;
+				outline: 0;
+				vertical-align: top;
+			}
+			.cdc-caption .cdc-caption-text {
+				padding: 7px 14px 10px 14px;
+			}
+			.externalImg{
+				display:none;
+			}
+		</style>
+		<!-- <link href="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/flexslider.css" rel="stylesheet" type="text/css" media="screen" /> -->
+	</head>
+	<body>
+		<!--#include virtual="/TemplatePackage/3.0/includes/skipmenu-Nav.html -->
+		<div id="wrapper">
+			<!--#include virtual="/TemplatePackage/3.0/includes/chrome-frame.html" -->
+			<div id="header">
+				<div class="container">
+					<!-- header -->
+					<!--#include virtual="/TemplatePackage/3.0/includes/header.html" -->
+					<!-- /header -->
+					<div class="titlebar">
+						<!--#include virtual="/TemplatePackage/3.0/includes/mobile-menu-button.html" -->
+						<h2>Content Page Carousels (Template D)</h2>
+					</div>
+					<!--#include virtual="/TemplatePackage/3.0/includes/noscript.html" -->
+				</div>
+			</div>
+			
+			<div class="container">
+				<div id="content">
+					<!-- left nav -->
+					<div id="nav-container" class="hidden-one hidden-two">
+						<!--#include virtual="/prototype/alpha/local/sample-leftnav.html" -->
+						<!--#include virtual="/TemplatePackage/3.0/includes/modules/Inc-mod-more-topics.html" -->
+						<!--#include virtual="/TemplatePackage/3.0/includes/modules/Inc-mod-updates.html" -->
+						<div class="hidden-one hidden-two">
+							<!--#include virtual="/TemplatePackage/3.0/includes/plugins-legend.html" -->
+						</div>
+					</div>
+					<div class="span19">
+						<div class="breadcrumbs">
+							<!--#include virtual="/prototype/alpha/local/breadcrumb.html" -->
+						</div>
+						<div class="row">
+							<div class="span8 socialmediabar">
+								<!--#include virtual="/TemplatePackage/3.0/includes/socialmedia-share.html" -->
+							</div>
+							<div class="span11 hidden-one">
+								<!--#include virtual="/TemplatePackage/3.0/includes/pageoptions-language.html" -->
+								<!--#include virtual="/TemplatePackage/3.0/includes/pageoptions-format.html" -->
+							</div>
+						</div>
+					</div>
+					<!-- body -->
+					<div id="body">
+						<div id="contentArea">
+							<!-- begin editable -->
+							<div class="module cdcSliderCarousel">
+								<h3>Slider with Title (default); Carousel with 4 thumbnails per page, Page Navigation, no Titles, no Descriptions</h3>
+								<div class="slider cdcSlider"></div>
+								<div class="slider cdcCarousel" id="carousel2">
+									<ul class="slides">
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/images/flexslider_a.jpg" alt="." />
+											<p class="slideTitle">Title 1</p>
+											<p class="slideDescription">This is a description for image 1.</p>
+										</li>
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/images/flexslider_b.jpg" alt="." />
+											<p class="slideTitle">Title 2</p>
+											<p class="slideDescription">This is a description for image 2.</p>
+										</li>
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/images/flexslider_c.jpg" alt="." />
+											<p class="slideTitle">Title 3</p>
+											<p class="slideDescription">This is a description for image 3.</p>
+										</li>
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/images/flexslider_d.jpg" alt="." />
+											<p class="slideTitle">Title 4</p>
+											<p class="slideDescription">This is a description for image 4.</p>
+										</li>
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/demo/images/kitchen_adventurer_cheesecake_brownie.jpg" alt="." />
+											<p class="slideTitle">Title 5</p>
+											<p class="slideDescription">This is a description for image 5.</p>
+										</li>
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/demo/images/kitchen_adventurer_lemon.jpg" alt="." />
+											<p class="slideTitle">Title 6</p>
+											<p class="slideDescription">This is a description for image 6.</p>
+										</li>
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/demo/images/kitchen_adventurer_donut.jpg" alt="." />
+											<p class="slideTitle">Title 7</p>
+											<p class="slideDescription">This is a description for image 7.</p>
+										</li>
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/demo/images/kitchen_adventurer_caramel.jpg" alt="." />
+											<p class="slideTitle">Title 8</p>
+											<p class="slideDescription">This is a description for image 8.</p>
+										</li>
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/demo/images/kitchen_adventurer_cheesecake_brownie.jpg" alt="." />
+											<p class="slideTitle">Title 9</p>
+											<p class="slideDescription">This is a description for image 9.</p>
+										</li>
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/demo/images/kitchen_adventurer_lemon.jpg" alt="." />
+											<p class="slideTitle">Title 10</p>
+											<p class="slideDescription">This is a description for image 10.</p>
+										</li>
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/demo/images/kitchen_adventurer_donut.jpg" alt="." />
+											<p class="slideTitle">Title 11</p>
+											<p class="slideDescription">This is a description for image 11.</p>
+										</li>
+										<li><img src="/TemplatePackage/2.7.0/js/B/jquery/libs/flexslider2/demo/images/kitchen_adventurer_caramel.jpg" alt="." />
+											<p class="slideTitle">Title 12</p>
+											<p class="slideDescription">This is a description for image 12.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- /end editable -->
+							<!-- Persistent Content Area -->
+							<div id="content-secondary" class="hidden-two hidden-three">
+								<!-- begin editable -->
+								<!--  // This area is optional 
+								// All content in the Right Column (except for Page Option links and GovD) will be moved to the Persistent Content Area upon migration
+								// This area will need to enabled if it is being used otherwise not included in the page build...
+								 --><!-- /end editable -->
+							</div><!-- /end #content-secondary -->
+						</div><!-- /end #contentArea -->
+					</div><!-- /end body -->
+					<div class="row">
+						<div class="span24 visible-one">
+							<!--#include virtual="/TemplatePackage/3.0/includes/pageoptions-format.html" -->
+							<!--#include virtual="/TemplatePackage/3.0/includes/pageoptions-language.html" -->
+						</div>
+					</div>
+					<!-- date stamp -->
+					<div id="datestamp">
+						<ul>
+							<li class="last-reviewed">Page last reviewed:<span itemprop="lastReviewed">January 4, 2013</span></li>
+							<li class="last-updated">Page last updated:<span itemprop="dateModified">January 4, 2013</span></li>
+							<li class="content-source">Content source:
+								<ul>
+									<!--#include virtual="/TemplatePackage/3.0/includes/datestamp.html" -->
+									<li itemprop="sourceOrganization" itemscope="itemscope" itemtype="http://schema.org/Organization">
+										<a href="/ncbddd/index.html" itemprop="url">NCBDDD</a>&nbsp;
+									</li>
+									<li itemprop="sourceOrganization" itemscope="itemscope" itemtype="http://schema.org/Organization">
+										<a href="/ncbddd/birthdefects/" itemprop="url">Division of Birth Defects and Developmental Disabilities</a>&nbsp;
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					
+				</div><!-- /end #content -->
+			</div><!-- /.container for content -->
+			
+			<!-- footer -->
+			<div id="footer">
+				<!--#include virtual="/TemplatePackage/3.0/includes/footer.html" -->
+			</div>
+			<!-- /#footer -->
+			<div id="totop" class="off visible-one">TOP</div>
+		</div>
+	</body>
+	<!--#include virtual="/TemplatePackage/3.0/includes/js.html" -->
+	<script>
+	<!--//
+		$(document).ready(function () {
+			var cdcLeftNav = new CDC.LeftNav("nav-primary", "/TemplatePackage/Templates/rwd/pastactivities-educating.html", true, true, true);
+			cdcLeftNav.render();
+		});
+	//-->
+	</script>
+</html>

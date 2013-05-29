@@ -1,0 +1,118 @@
+/*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* FlexSlider Necessary Styles
+*********************************/ 
+#content .flexsliderbox .flexslider {
+	background-color: #F3F2F9;
+	color: #3D316A;
+	position: relative;
+	margin: 2px;
+	padding: 0;
+	zoom: 1;
+}
+
+/*Default style with js Fallback*/
+.flexsliderbox .flexslider .slides > li {
+	background-color:#F3F2F9;
+	padding:5px 0px 0px 5px;
+} /* Hide the slides before the JS is loaded. Avoids image jumping */
+
+.flex-caption {
+	color:#3D316A;
+	font-family:Georgia, "Times New Roman", Times, Palatino, serif;
+}
+.flex-caption { font-family:Georgia, "Times New Roman", Times, Palatino, serif; }
+.flex-caption h3 {
+	color:#3D316A;
+	font-family:Georgia, "Times New Roman", Times, Palatino, serif;
+}
+.flex-caption p {
+	color:#3D316A;
+	font-family:Georgia, "Times New Roman", Times, Palatino, serif;
+}
+
+/* Direction Nav */
+/*.flex-direction-nav li a {
+display:block;
+background:url(/TemplatePackage/js/B/2.6.0/flexslider/bg_direction_nav5.png) no-repeat 0 0;
+position:absolute; 
+width:52px; height:52px; 
+margin:-13px 0 0; 
+display:block; 
+top:50%; 
+cursor:pointer; 
+text-indent:-9999px;
+z-index:99;
+}
+.flex-direction-nav li .next {background-position:-52px 0; right:-8px;}
+.flex-direction-nav li .prev {left:-7px;}
+.flex-direction-nav li .disabled {opacity:.3; filter:alpha(opacity=30); cursor:default;}*/
+
+/* Alt Direction Nav */
+.flexsliderbox .flex-direction-nav a {
+	display:block;
+	height:24px;
+	line-height:24px;
+	position:relative;
+	margin:0;
+	padding:0;
+	background-color:transparent;
+	color:#3D316A;
+	text-decoration:none; 
+}
+
+.flexsliderbox .flex-direction-nav li a.prev:after,
+.flexsliderbox .flex-direction-nav li a.flex-prev:after {
+	border-color:transparent #3D316A transparent transparent;
+}
+
+.flexsliderbox .flex-direction-nav li a.next:after,
+.flexsliderbox .flex-direction-nav li a.flex-next:after {
+	border-color:transparent transparent transparent #3D316A;
+}
+
+.flex-direction-nav li .disabled {opacity:.3; filter:alpha(opacity=30); cursor:default;}
+
+/* Control Nav */
+.flex-control-nav li {
+	color: #3D316A;
+}
+.flexsliderbox .flex-control-nav li:first-child { margin:0; }
+.flexsliderbox .flex-control-nav li a {
+
+	color:#3D316A;
+	background-color:white;
+}
+.flexsliderbox .flex-control-nav li a:hover {
+	color:#3D316A;
+	background-color:#DAD5EB;
+}
+.flexsliderbox .flex-control-nav li a.active {
+	color:#3D316A;
+	background-color:#DAD5EB;
+}
+
+/*Additional Styling*/
+#content .flexslider .slidelft *,
+#content .flexslider a,
+#content .morex a,
+#content .main-inner .morex a { color:#3D316A; }
+#content .flex-control-nav li a {
+	color:#3D316A;
+	text-decoration:none;
+}
+.flexsliderbox .flexslider .slides .slidelft .morex a {
+	color:#3D316A;
+}
+
+.flexsliderbox {
+	border:solid 1px #C5BEE1;
+}
+;

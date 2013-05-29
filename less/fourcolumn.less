@@ -1,0 +1,393 @@
+// since IE is no longer going to be supported here, make sure we're applying the 4 column rules to the ie.css
+// 
+// http://css-tricks.com/snippets/css/retina-display-media-query/
+
+
+// @media only screen 
+//   and (min-device-width: 1536px)
+//   and (max-device-width: 2048px)
+//   and (orientation : landscape)
+//   and (-webkit-min-device-pixel-ratio: 2){
+//       // Retina iPad specific CSS
+// }
+
+
+
+//   ______                  _____      _                       
+//  |  ____|                / ____|    | |                      
+//  | |__ ___  _   _ _ __  | |     ___ | |_   _ _ __ ___  _ __  
+//  |  __/ _ \| | | | '__| | |    / _ \| | | | | '_ ` _ \| '_ \ 
+//  | | | (_) | |_| | |    | |___| (_) | | |_| | | | | | | | | |
+//  |_|  \___/ \__,_|_|     \_____\___/|_|\__,_|_| |_| |_|_| |_|
+@media screen and (min-width: 1200px){
+	.visible-four{display: inherit !important;}
+	.visible-three{display: none !important;}
+	.visible-two{display: none !important;}
+	.visible-one{display: none !important;}
+	.hidden-four{display: none !important;}
+	
+	.row{
+		padding: 0 !important;
+	}
+	
+	// a2z bar button
+	// .a2z-button.border-bottom-cdcblue{
+	// 	border-width: 5px;
+	// }
+	
+	// search dropdown
+	.btn-group{float:left;}
+	
+	
+	form[id*="searchForm"]{
+		float: right;
+		margin-bottom: 0;
+
+		button.submit {
+			height: 26px;
+		}
+
+		td#searchtd {
+			width: 242px;
+		}
+	}
+
+
+	#searchForm{
+		width: 185px;
+		margin-bottom: 0;
+		// margin-left: 215px;
+	}
+	// #search.local,
+	.cdc-local-check{
+		// background: #476ca4;
+		width: 225px;
+		// margin-left: 70px;
+	}
+	
+		.a2z-link-button{
+		span{
+			float: right;
+			margin-left: 4px;
+			margin-top: 3px;
+		}
+	}
+	
+	.about-us-module{
+		ul{
+			width:75%;
+		}
+		li{
+			margin-left:20px;
+			margin-bottom:10px;
+		}
+	}
+	
+	#onthispage, .on-this-page-module{
+		ul{
+			display: block;
+		}
+	}
+	
+	#pageslide{
+		display: none;
+	}
+	
+	.pageoptions{
+		a:first-child{
+			font-size: @smallFontSize;
+		}
+	}
+	
+	.highlight-module.list a{
+		font-size: @normalFontSize;
+	}
+	
+	// Set width for #nav-container
+	html.nav{
+		#nav-container{
+			float: left;
+			width: 235px;
+		}
+		
+		// &.four{
+			#body{
+			// 	.box-sizing();
+			width: 935px; // the equivevilant to 19-columns (span19)
+			
+			// 	.span19{
+			// 		width: 925px;
+			// 	}
+			// 	.span18{
+			// 		width: 875px;
+			// 	}
+			// 	.span17{
+			// 		width: 825px;
+			// 	}
+			// 	.span16{
+			// 		width: 775px;
+			// 	}
+			// 	.span15{
+			// 		width: 725px;
+			// 	}
+			// 	.span14{
+			// 		width: 675px;
+			// 	}
+			// 	.span13{
+			// 		width: 625px;
+			// 	}
+			// 	.span12{
+			// 		width: 575px;
+			// 	}
+			// 	.span11{
+			// 		width: 525px;
+			// 	}
+			// 	.span15{
+			// 		width: 475px;
+			// 	}
+			// 	.span9{
+			// 		width: 425px;
+			// 	}
+			// 	.span8{
+			// 		width: 375px;
+			// 	}
+			// 	.span7{
+			// 		width: 325px;
+			// 	}
+			// 	.span6{
+			// 		width: 275px;
+			// 	}
+			
+			// .span5{
+			// 	width: 181px;
+			// }
+			// .span4{
+			// 	width: 132px;
+			// }
+			// .span2{
+			// 	width: 83px;
+			// }
+			// .span1{
+			// 	width: 34px;
+			// }
+			}
+		// }
+	}
+	
+/*	html.home{
+		.pageoptions{
+			li.show{
+				> ul{
+					display: block;
+				}
+			}
+			
+			span:first-child{
+				float:left;
+				margin-top: 8px;
+				margin-right: 4px;
+				// margin-left: -8px;
+			}
+		}
+	}
+	html.home-feat{
+		.pageoptions{
+			li.show{
+				> ul{
+					display: block;
+				}
+			}
+			
+			span:first-child{
+				float:left;
+				margin-top: 8px;
+				margin-right: 4px;
+			}
+		}		
+	}
+	html.home-feat-opt{
+		.pageoptions{
+			.nav{
+				margin-left: 0;
+				display: table;
+				table-layout: fixed;
+				// display: block;
+				width:100%;
+				> li{
+					display: table-cell;
+					// display: block; 
+					float: left;
+					position: relative;
+					width: 20%;
+					> a{
+						border-bottom:0;
+						border-left: 1px solid @po-border-color;
+					}
+				}
+				li:first-child{
+					a{
+						border-left:0;
+					}
+				}
+				
+				// adjust the page options dropdown menus
+				ul{
+					display: block;
+					position: absolute;
+					background-color: @white;
+					border: 1px solid @po-border-color;
+					padding: 12px;
+					width: 100%;
+					margin-left: -15px;
+					margin-top:0;
+					z-index: 999;
+				}
+			}
+			li.show{
+				> ul{
+					display: none;
+				}
+			}
+			
+			span:first-child{
+				float:left;
+				margin-top: 11px;
+				margin-right: 4px;
+			}
+		}
+	}
+	
+	html.home-ln, html.content{
+		.pageoptions{
+			li.show{
+				> ul{
+					display: block;
+				}
+			}
+			span:first-child{
+				float: left;
+				margin-top: 12px;
+				margin-right: 10px;
+				// margin-left: -5px;
+			}
+		}
+	}
+	html.content-float{
+		.pageoptions{
+			li.show{
+				> ul{
+					display: block;
+				}
+			}
+		}		
+	}
+	html.wide{
+		.pageoptions{
+			.nav{
+				margin-left: 0;
+				display: table;
+				table-layout: fixed;
+				width:100%;
+				> li{
+					display: table-cell;
+					a{
+						border-bottom:0;
+						border-left: 1px solid @po-border-color;
+					}
+				}
+				li:first-child{
+					a{
+						border-left:0;
+					}
+				}
+				
+				// adjust the page options dropdown menus
+				ul{
+					display: block;
+					position: absolute;
+					background-color: @white;
+					border: 1px solid @po-border-color;
+					padding: 12px;
+					width: 100%;
+					margin-left: -15px;
+					margin-top:0;
+					z-index: 999;
+				}
+			}
+			li.show{
+				> ul{
+					display: none;
+				}
+			}
+		}
+	}
+	html.wide-ln{
+		.pageoptions{
+			li.show{
+				> ul{
+					display: none;
+				}
+			}
+		}
+	}
+	
+	.selected.dropdown{
+		> .arrow, > a[id*="po-"] .arrow{
+			background: url('/TemplatePackage/3.0/images/TRIANGLES.png') no-repeat -354px -29px;
+			width: 11px;
+			height: 11px;
+			cursor: pointer;
+		}
+	}
+	
+	.dropdown{
+		> .arrow, > a[id*="po-"] .arrow{
+			background: url('/TemplatePackage/3.0/images/TRIANGLES.png') no-repeat -354px -4px;
+			width: 11px;
+			height: 11px;
+			cursor: pointer
+		}
+	}
+	
+	.selected.dropup{
+		> .arrow, > a[id*="po-"] .arrow{
+			background: url('/TemplatePackage/3.0/images/TRIANGLES.png') no-repeat -325px -29px;
+			width: 11px;
+			height: 11px;
+			cursor: pointer;
+		}
+	}
+	
+	.dropup{
+		> .arrow, > a[id*="po-"] .arrow{
+			background: url('/TemplatePackage/3.0/images/TRIANGLES.png') no-repeat -325px -4px;
+			width: 11px;
+			height: 11px;
+			cursor: pointer;
+		}
+	}
+*/	
+	.js{
+		nav#left{
+			li{
+				min-width: 170px;
+				a{
+					// display: inline-block;
+				}
+			}
+			h3{
+				min-width: 170px;
+			}
+		}
+	}
+	
+	nav#left{
+		a{
+			// font-size:@smallFontSize;
+		}
+		span:first-child{
+			margin-top: 8px;
+			margin-right: 4px;
+		}
+	}
+}

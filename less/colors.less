@@ -1,0 +1,133 @@
+//  Color palettes and colors used throughout the template.
+
+// blue
+// @cdcblue_c_01:#075290;
+// @cdcblue_c_02:;
+// @cdcblue_c_03:;
+// @cdcblue_c_04:;
+// @cdcblue_c_05:;
+
+// teal
+@teal_c_01:#084239;
+@teal_c_02:#C1DED5;
+@teal_c_03:#DEEEE9;
+@teal_c_04:#F6FCFB;
+@teal_c_05:#9ECFC0;
+
+// orange
+@orange_c_01:#612E1F;
+@orange_c_02:#F9C671;
+@orange_c_03:#FBD69A;
+@orange_c_04:#FBF5E3;
+@orange_c_05:#F8BA53;
+
+// purple
+@purple_c_01:#3D316A;
+@purple_c_02:#C5BEE1;
+@purple_c_03:#DAD5EB;
+@purple_c_04:#F3F2F9;
+@purple_c_05:#BAB1DB;
+
+// green
+@green_c_01:#085100;
+@green_c_02:#C1D5B0;
+@green_c_03:#D7E4CC;
+@green_c_04:#F5FAED;
+@green_c_05:#B5CE9E;
+
+// tan
+@tan_c_01:#503608;
+@tan_c_02:#CCBA8B;
+@tan_c_03:#E4DABC;
+@tan_c_04:#FAF7EC;
+@tan_c_05:#DAC887;
+
+// rose
+@rose_c_01:#621919;
+@rose_c_02:#E1B8B8;
+@rose_c_03:#EFD9D9;
+@rose_c_04:#FCF7F7;
+@rose_c_05:#DCA4A4;
+
+
+// common colors 
+@c_06:#FEFAE8;
+@c_07:#BFBFBF;
+@c_08:#CECECE;
+@c_09:#F6F6F6;
+@c_10:#F0F5EB; 
+@c_11:#0A29A5; // body content links
+@c_12:#4A006E; // visited links
+@c_13:#A8A8A8;
+@c_14:#E8E8E8;
+@c_15:#999999;
+@c_16:#0B32D0;
+
+
+@white: #fff;
+@black: #000;
+@cdcblue: #075290;
+
+
+
+//TODO: ALL THESE COLORS NEED TO BE CLASSIFIED BETTER!;
+//
+
+@light-gray:#EEE;
+@gray:#999;
+@dark-gray:#CDCDCD;
+@another-gray:#c0c0c0;
+@light-black:#303030;
+
+@light-blue: #C8DBF5;	// from kristens comps
+@brown: brown;  // original no script color
+
+
+// PO colors
+@po-heading-bg:#e5e5e5;
+@po-heading-color:#3d3d3d;
+@po-border-color:#cdcdcd;
+
+// link color
+@link:#005580;
+
+// green gradients
+@light-green:#96B565;
+@green:#77914F;
+@dark-green:#4B5F2D;
+
+
+.theme-buildr(#075290,#cfe1f3,#036);
+
+
+
+
+//http://stackoverflow.com/questions/11599520/less-css-variable-depending-on-class
+// 2,3,1
+.theme-green {
+	.theme-buildr(#C1D5B0,#D7E4CC,#085100);
+}
+
+//@green_c_01:#085100;
+//@green_c_02:#C1D5B0;
+//@green_c_03:#D7E4CC;
+
+.theme-purple {
+	.theme-buildr(#C5BEE1,#DAD5EB,#3D316A);
+}
+
+.theme-rose {
+	.theme-buildr(#E1B8B8,#EFD9D9,#621919);
+}
+
+.theme-orange {
+	.theme-buildr(#F9C671,#FBD69A,#612E1F);
+}
+
+.theme-tan {
+	.theme-buildr(#CCBA8B,#E4DABC,#503608);
+}
+
+.theme-teal {
+	.theme-buildr(#C1DED5,#DEEEE9,#084239);
+}

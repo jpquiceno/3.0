@@ -1,0 +1,448 @@
+// search.less
+// 
+// four column
+@media screen and (min-width: 1200px) {
+	#newsearch {
+		.box-sizing(border-box);
+		width:450px;
+		background: #dad5eb;
+		float: right;
+		padding:2px;
+		color:@black;
+		margin:5px 0;
+		
+		#newsearchmenu {
+			float: left;
+			img {
+				float: right;
+				position: relative;
+				top: -15px;
+				left: 15px;
+			}
+		}
+		#newsearchtext {
+			margin-top:6px;
+			margin-left:2px;
+			display: block;
+			cursor: pointer;
+			line-height: 15px
+		}
+		ul {
+			display: none;
+			position: absolute;
+			border:1px solid #c0c0c0;
+			margin-left:0;
+			margin-top:8px;
+			width: 170px;
+			li {
+				display: block;
+				background: @white;
+				padding:6px;
+			}
+		}
+		button {
+			float: right;
+			width:45px;
+			height: 30px;
+			background: @cdcblue;
+			color:#fff;
+			border: 0;
+			span {
+				margin-left:8px;
+				display: block;
+			}
+		}
+		input[type="text"] {
+			-webkit-border-radius: 0;
+			border-radius: 0;
+			margin:0;
+			float: left;
+		}
+		input[type="text"]:focus {
+			border:none;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+		#newsearchform {
+			border:1px solid @white;
+			float: right;
+			margin:0;
+		}
+	}
+	
+	// #search,
+	form[id*="searchForm"] {
+		#searchBox, #searchBoxLocal {
+			.box-sizing(border-box);
+			height: 30px;
+			width: 152px;
+		}
+		
+		input[type='submit'], button.submit{
+			position: relative;
+			// left: 0px;
+			top: 1px;
+			right: 0px;
+		}
+	}
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+	#newsearch {
+		.box-sizing(border-box);
+		// width:450px;
+		background: #dad5eb;
+		float: right;
+		padding:2px;
+		color:@black;
+		margin:5px 0;
+		
+		#newsearchmenu {
+			//float: left;
+			img {
+				margin-top:7px;
+				margin-left:5px;
+			}
+		}
+		#newsearchtext {
+			margin-top:6px;
+			margin-left:2px;
+			display: block;
+			cursor: pointer;
+			float:left;
+		}
+		ul {
+			display: none;
+			position: absolute;
+			border:1px solid #c0c0c0;
+			margin-left:0;
+			margin-top:3px;
+			li {
+				display: block;
+				background: @white;
+				padding:6px;
+			}
+		}
+		button {
+			float: right;
+			width:45px;
+			height: 30px;
+			background: @cdcblue;
+			color:#fff;
+			border: 0;
+			span {
+				margin-left:8px;
+				display: block;
+			}
+		}
+		input[type="text"] {
+			-webkit-border-radius: 0;
+			border-radius: 0;
+			margin:0;
+			float: left;
+		}
+		input[type="text"]:focus {
+			border:none;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+		#newsearchform {
+			border:1px solid @white;
+			float: right;
+			margin:0;
+		}
+	}
+	
+	// #search,
+	form[id*="searchForm"] {
+		input[type='submit'], button.submit{
+			position: relative;
+			left: -3px;
+			top: 1px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+	#newsearch {
+		.box-sizing(border-box);
+		width:450px;
+		background: #dad5eb;
+		float: right;
+		padding:2px;
+		color:@black;
+		margin:5px 0;
+		
+		#newsearchmenu {
+			float: left;
+			img {
+				float: right;
+				position: relative;
+				top: -15px;
+				left: 15px;
+			}
+		}
+		#newsearchtext {
+			margin-top:6px;
+			margin-left:2px;
+			display: block;
+			cursor: pointer;
+			line-height: 15px
+		}
+		ul {
+			display: none;
+			position: absolute;
+			border:1px solid #c0c0c0;
+			margin-left:0;
+			margin-top:7px;
+			li {
+				display: block;
+				background: @white;
+				padding:6px;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+		}
+		button {
+			float: right;
+			width:45px;
+			height: 30px;
+			background: @cdcblue;
+			color:#fff;
+			border: 0;
+			span {
+				margin-left:8px;
+				display: block;
+			}
+		}
+		input[type="text"] {
+			-webkit-border-radius: 0;
+			border-radius: 0;
+			margin:0;
+			float: left;
+		}
+		input[type="text"]:focus {
+			border:none;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+		#newsearchform {
+			border:1px solid @white;
+			float: right;
+			margin:0;
+		}
+	}
+	
+	// #search,
+	form[id*="searchForm"] {
+		input[type='submit'], button.submit{
+			position: relative;
+			left: -1px;
+			top: 1px;
+		}
+	}
+}
+
+// in one column, the search area needs to be 100% of the device width
+// this means that the textbox must fill the area
+@media (max-width: 767px) {
+	#newsearch {
+		.box-sizing(border-box);
+		min-width:320px;
+		width:100%;
+		background: #dad5eb;
+		float: right;
+		padding:2px;
+		color:@black;	
+		margin:5px 0;
+		margin-top:10px;
+		
+		display: table;
+		
+		// no rounded in iphone
+		input, textarea {
+			-webkit-appearance: none;
+			-webkit-border-radius: 0;
+		}
+		
+		.arrow {
+			float: left;
+			margin-top: 10px;
+			margin-left: 5px;
+		}
+		
+		#newsearchmenu {
+			// float: left;
+			line-height: 20px;
+		
+			img {
+				margin-top:9px;
+				margin-left:5px;
+			}
+		}
+		#newsearchtext {
+			margin-top:6px;
+			margin-left:8px;
+			display: block;
+			cursor: pointer;
+			float: left;
+		}
+		ul {
+			display: none;
+			position: absolute;
+			border:1px solid #c0c0c0;
+			margin-left:0;
+			margin-top:36px;
+			
+			li {
+				display: block;
+				background: @white;
+				padding:6px;
+			}
+		}
+		button {
+			// float: right;
+			width:45px;
+			height: 30px;
+			background: @cdcblue;
+			color:#fff;
+			border: 0;
+			display: table-cell;
+			
+			span {
+				margin-left:8px;
+				display: block;
+			}
+		}
+		#newinputwrapper {
+			width:100%;
+			display: table-cell;
+		}
+		input[type="text"] {
+			-webkit-border-radius: 0;
+			border-radius: 0;
+			margin:0;
+			width:100%;
+			// float: left;
+		}
+		input[type="text"]:focus {
+			// border:none;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+		#newsearchform {
+			border:1px solid @white;
+			float: right;
+			display: table;
+			width:100%;
+			margin:0;
+		}
+	}
+	
+	// #search,
+	form[id*="searchForm"] {
+		#search input[type="text"] {
+			border: 2px solid @cdcblue;
+		}
+	}
+}
+
+// #search,
+form[id*="searchForm"] {
+	margin-top:10px;
+
+	input[type="text"]{
+		box-shadow: none;
+		border: 1px solid @cdcblue;
+		border-right: none;
+		border-radius: 0;
+	}
+	
+	input[type='submit'], button.submit{
+		.box-sizing(border-box);
+		// background: @cdcblue;
+		background: @white;
+		width: 30px;
+		// height: 28px;
+		// border: 1px solid @white;
+		border: none;
+		// color: @white;
+		color: @black;
+		font-size: 20px;
+		
+		span{
+			display: inline-block;
+		}
+	}
+	
+	// local search dropdown
+	.dropdown-toggle{
+		width: 196px;
+		text-align: left;
+	}
+	
+	.btn{
+		.caret{
+			float:right;	// breaks things in IE9 & Firefox
+		}
+	}
+	
+	// try to fix the shifting of the dropdown button
+	.btn:hover{
+		background-position: 0;
+		-webkit-transition: 0;
+	}
+	
+	// [data-icon]:before {
+	// 	display: block; 
+	// 	content: attr(data-icon); 
+	// 	font-family: 'sosaregular'; 
+	// 	text-align: center;
+	// 	font-size: 6em; 
+	// 	line-height: 55px; 
+	// 	padding: 25px 0; 
+	// 	color: @black;  
+	// 	box-shadow: 0 0 3px rgba(0,0,0,0.1); 
+	// 	cursor: default;
+	// }
+
+	button{
+		color:@black;
+	}
+
+	.dropdown-menu{
+		.cdc{
+			background: @cdcblue;
+			a{
+				color:#fff;
+			}
+		}
+	}
+
+	li > a:hover{
+		text-decoration: underline;
+	}
+}
+
+	.a2z-button {
+		span {
+			float:right;
+			margin-top: 3px;
+			margin-left: 5px;
+		}
+	}
+
+// .topic-button,
+.search-button {
+	background: @cdcblue;
+	float: right;
+	padding: 5px;
+	cursor: pointer;
+	color: @white;
+	text-transform: uppercase;
+	clear: both;
+	margin-top:5px;
+	margin-bottom:3px;
+	width:88px;
+	text-align:center;
+}

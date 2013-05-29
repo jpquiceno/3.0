@@ -1,0 +1,12 @@
+html, body {
+	background: #fff !important;
+	color: #000 !important;
+	margin: 0;
+	padding: 0;
+}
+body {
+	float: none !important;
+	margin: 0.25px !important;
+	padding: 0 !important;
+	font: 12pt Georgia, "Times New Roman", Times, serif;
+}

@@ -1,0 +1,152 @@
+//  *
+//  * bootstrap overrides
+//  *
+//  * To keep track of any changes we make to bootstrap classes, keep them within this file ONLY, AND DOCUMENT the reason for it.  Do NOT modify bootstrap.css
+//  *
+//  * NOTE: this does not mean if you have wrapped or targeted an element that uses bootstrap, to put it here, only that if you are modifying a class in bootstrap
+//  *
+
+
+.border-bottom-white {
+	border-bottom:1px solid @white;
+}
+
+.border-bottom-themed {
+	border-bottom:1px solid #c5bee1;	/* TODO: theme color */
+}
+
+.border-bottom-cdcblue {
+	border-bottom:1px solid @cdcblue;
+}
+
+// wrap the search area
+.input-prepend{
+	.box-sizing(border-box);
+	background: @cdcblue;
+	margin-bottom: 5px;
+	padding: 1px 2px 1px 1px;
+	width: 185px;
+}
+
+.cdc-local-check, input[type="checkbox"] {
+	float: left;
+}
+
+.cdc-local-check {
+	.box-sizing(border-box);
+	background: @cdcblue;
+	padding: 1px 2px 1px 1px;
+	height: 32px;
+
+	input[type="checkbox"] {
+		margin: 8px 10px;
+	}
+
+	label {
+		.box-sizing(border-box);
+		color: @white;
+		border: none;
+		padding: 4px 6px;
+		height: 30px;
+	}
+}
+
+.btn{
+	border:0;
+}
+
+// arrows on page options
+.icon-chevron-up {
+	background: url('/TemplatePackage/3.0/images/up.png');
+}
+
+.icon-chevron-down {
+ 	background: url('/TemplatePackage/3.0/images/down.png');
+}
+
+.nav .dropdown-toggle .caret{
+	border-top-color: @black;
+	border-bottom-color: @black;
+}
+
+.nav .dropdown-toggle:hover .caret {
+  border-top-color: @black;
+  border-bottom-color: @black;
+}
+
+// dropdown menu
+// these adjustments were for the search dropdown
+.dropdown-menu{
+	border-radius: 0;
+	padding:0;
+	// Remove the hover
+	li > a:hover{
+		background:none;
+		color:@black;
+	}
+}
+
+.navhead {
+	.icon-remove {
+		background-position: -470px 0;
+	}
+
+	[class^="icon-"], [class*=" icon-"] {
+		//this should be a variable!
+		background-image: url('/TemplatePackage/3.0/images/glyphicons-halflings_big.png');
+	}
+}
+
+select#select {
+	.box-sizing(border-box);
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	width: 185px;
+}
+
+#content{
+	img.pull-right{
+		margin-left: 1em;	margin-left: 1rem;
+	}
+}
+
+#featureArea, .featureArea, #contentArea, #rightRail{
+	ul, ol{
+		// margin-left: 30px; margin-left: 2rem;
+	}
+
+	.feature-hero-sample{
+		position: relative;
+
+		span{
+			position: absolute;
+
+			&.header, &:nth-child(1){
+				color: @white;
+				font-family: 'Lato', sans-serif;
+				font-size: 65px;
+				font-weight: 700;
+				left: 32px;
+				top: 33px;
+				text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+				text-transform: uppercase;
+			}
+			&:nth-child(2){
+				color: #3f3f3f;
+				font-size: 30px;
+				font-weight: bold;
+				font-family: 'Lato', sans-serif;
+				left: 30px;
+				top: 100px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.pull-left-full{
+	float: left;
+	margin-left: 0;
+	margin-right: 10px;
+}

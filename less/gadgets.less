@@ -1,0 +1,38 @@
+//  * gadgets.less
+// 	Accordion
+// 	Carousel
+// 	Tabs
+// 	Social Media Feed
+
+
+ // hide the widgets by default, so you don't see the original content on load 
+.accordion, .tabs, #slider{
+	visibility:hidden;
+}
+
+.ui-tabs-nav li a {
+	outline-color:transparent;
+}
+
+ // I'm not certain we need to !important these, perhaps loading them later...? 
+.flex-control-paging li a, .flex-control-paging li a.flex-active{
+	background:#fff!important;
+	color:@black!important;
+	width:40px!important;
+	height:auto!important;
+	-webkit-border-radius: 0!important;
+	-moz-border-radius: 0!important;
+	-o-border-radius: 0!important;
+	border-radius: 0!important;
+	text-indent: 0!important;
+	padding: 2px 4px !important;
+}
+
+.flex-control-paging li a.flex-active{
+	background:@light-blue!important;
+}
+
+ // this may break things! 
+#slider {
+	margin-bottom:10px!important;
+}

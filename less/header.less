@@ -1,0 +1,63 @@
+//header.less
+//
+
+// hide it by default!
+#cdclogo{
+	display: none;
+}
+
+#logo{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+// mobile menu icon 
+.mmb{
+	float:right;
+	cursor: pointer;
+	margin-top:-41px;	// the m. logo currently shoves this button out of position
+}
+
+#content{
+	h1:first-child{
+		font-size: 24px; 
+		line-height: 40px;  // default for h2
+	}
+}
+
+#header {
+	.titlebar{
+		height: auto;
+		min-height: 50px;
+		// margin-bottom:10px;
+		overflow: hidden;
+		float: left;
+		width: 100%;
+
+		h1,h2{
+			// margin-top:10px;
+			color: #fff;
+			font-size: 25px; font-size: 2.5rem;
+			line-height: 42px;
+			margin: 3px 0 3px 10px;
+			padding: 3px 0;
+			a{
+				color:#000;
+			}
+		}
+
+		.bread-crumb{
+			padding-left:15px;
+			span{
+				color:#000;
+			}
+		}
+	}	
+}
+
+// .home .bread-crumb {display: none;}
+
+#emergencyContainer {
+	// background:yellow;
+	// min-height:100px;
+}
